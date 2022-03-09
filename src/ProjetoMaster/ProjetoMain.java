@@ -8,7 +8,7 @@ public class ProjetoMain {
 		
 		Instituicao ins = new Instituicao();
 		
-		Scanner leia = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int cep1; 
 		int idade;
@@ -18,38 +18,43 @@ public class ProjetoMain {
 		String email;
 		String telefone;
 		
-		System.out.println("-----------------------------");
-		System.out.println("=       C     A     T       =");
-		System.out.println("-----------------------------");
+		System.out.println("------------------------------");
+		System.out.println("=     C       A       T      =");
+		System.out.println("=                            =");
+		System.out.println("=     Catalisador do Bem     =");
+		System.out.println("------------------------------");
+		System.out.println();
 		System.out.print("Nome: ");
-		nome = leia.next();
-		System.out.print("Sobrenome: ");
-		sobreNome = leia.next();
+		nome = input.next();
+		System.out.println("-----------------------------");
+		System.out.print("Último Nome: ");
+		sobreNome = input.next();
 		System.out.println("-----------------------------");
 		System.out.print("Idade: ");
-		idade = leia.nextInt();
+		idade = input.nextInt();
 		System.out.println("-----------------------------");
 		System.out.print("CPF ou RG: ");
-		cpf = leia.next();
+		cpf = input.next();
 		System.out.println("-----------------------------");
 		System.out.print("Email: ");
-		email = leia.next();
+		email = input.next();
 		System.out.println("-----------------------------");
 		System.out.print("Telefone: ");
-		telefone = leia.next();
+		telefone = input.next();
 		System.out.println("-----------------------------");
 		System.out.print("CEP: ");
-		cep1 = leia.nextInt();
+		cep1 = input.nextInt();
 		System.out.println("-----------------------------");
+		System.out.println();
 		
 		if (idade >= 18) { 
 			ins.instituicao();
 		}
 		else {
-			System.out.println("Menor de 18 anos não pode doar");
+			System.out.println("Menores de 18 anos não podem doar");
 		}
 		
-		leia.close();
+		input.close();
 		
 	}
 
